@@ -16,6 +16,7 @@
 			{
 				"alias": {
 					"@config": "./configurations.js",
+					"@knexFile": "./knexfile.js",
 					"@app": "./src/app.js",
 					"@services": "./src/services/index.js"
 				}
