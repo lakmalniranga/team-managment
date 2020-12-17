@@ -8,6 +8,7 @@ dotenv.config({ path: path.resolve(process.cwd(), './.env') });
 const environment = process.env.NODE_ENV || 'development';
 
 module.exports = {
+	APP_SECRET: process.env.APP_SECRET,
 	ENVIRONMENT: environment,
 	IS_PRODUCTION: environment === 'production',
 	IS_STAGING: environment === 'staging',

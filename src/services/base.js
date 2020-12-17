@@ -4,6 +4,7 @@ export default class ServiceBase {
 			? this._isInitialized
 			: false;
 	}
+
 	set isInitialized(val) {
 		this._isInitialized = val;
 	}
@@ -22,6 +23,7 @@ export default class ServiceBase {
 			);
 		}
 	}
+
 	set instance(val) {
 		this._instance = val;
 	}

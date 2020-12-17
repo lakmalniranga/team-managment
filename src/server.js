@@ -2,11 +2,12 @@ import http from 'http';
 
 import app from '@app';
 import config from '@config';
-import { logger } from '@services';
+import servicesInitializer, { logger } from '@services';
 
 /**
  * Get port from environment and store in Express.
  */
+servicesInitializer({});
 const port = config.PORT;
 app.set('port', 3000);
 

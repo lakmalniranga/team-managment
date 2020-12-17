@@ -18,7 +18,10 @@
 					"@config": "./configurations.js",
 					"@knexFile": "./knexfile.js",
 					"@app": "./src/app.js",
-					"@services": "./src/services/index.js"
+					"@services": "./src/services/index.js",
+					"@auth": "./src/modules/auth",
+					"@users": "./src/modules/users",
+					"@src": "./src"
 				}
 			}
 		]

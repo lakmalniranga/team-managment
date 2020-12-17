@@ -1,8 +1,9 @@
+import cors from 'cors';
 import express from 'express';
 import requestLogger from 'morgan';
-import cors from 'cors';
 
 import { logger } from '@services';
+import authRouter from '@auth/routes';
 
 const app = express();
 
@@ -17,6 +18,11 @@ app.use(
 	})
 );
 app.use(cors());
+
+/**
+ * API endpoints
+ */
+app.use('/auth', authRouter);
 
 /**
  * Return errors with relevent HTTP status code
