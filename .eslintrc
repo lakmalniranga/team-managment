@@ -1,0 +1,33 @@
+{
+	"extends": [
+		"eslint:recommended",
+		"plugin:jest/recommended",
+		"eslint-config-prettier",
+		"plugin:import/errors",
+		"plugin:import/warnings",
+		"plugin:prettier/recommended"
+	],
+	"plugins": ["prettier", "jest", "import"],
+	"parser": "babel-eslint",
+	"env": {
+		"es6": true,
+		"node": true,
+		"jest": true
+	},
+	"rules": {
+		"no-console": 1,
+		"prettier/prettier": ["error", 
+			{
+				"endOfLine":"auto"
+			}
+		]
+	},
+	"settings": {
+		"import/resolver": {
+			"babel-module": {}
+		}
+	},
+	"globals": {
+		"__rewire_reset_all__": "readonly"
+	}
+}

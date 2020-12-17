@@ -1,0 +1,25 @@
+{
+	"presets": [
+		[
+			"@babel/preset-env",
+			{
+				"targets": {
+					"node": "current"
+				}
+			}
+		]
+	],
+	"plugins": [
+		"@babel/plugin-proposal-optional-chaining",
+		[
+			"module-resolver",
+			{
+				"alias": {
+					"@config": "./configurations.js",
+					"@app": "./src/app.js",
+					"@services": "./src/services/index.js"
+				}
+			}
+		]
+	]
+}
