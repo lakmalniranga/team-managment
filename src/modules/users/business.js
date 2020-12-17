@@ -11,7 +11,7 @@ export class UserBusiness {
 	async validateEmail({ email, excludeUserID }) {
 		const isValid = await validateEmail(email);
 		if (!isValid) throw EMAIL_INVALID;
-		const exists = await userRepo.emailExists({ email, excludeUserID });
+		const exists = await this.repo.emailExists({ email, excludeUserID });
 		if (exists) throw EMAIL_USED;
 	}
 

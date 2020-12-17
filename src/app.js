@@ -4,6 +4,8 @@ import requestLogger from 'morgan';
 
 import { logger } from '@services';
 import authRouter from '@auth/routes';
+import teamRouter from '@teams/routes';
+import { isAuthenticated } from '@auth/controllers';
 
 const app = express();
 
@@ -23,6 +25,7 @@ app.use(cors());
  * API endpoints
  */
 app.use('/auth', authRouter);
+app.use('/teams', isAuthenticated, teamRouter);
 
 /**
  * Return errors with relevent HTTP status code

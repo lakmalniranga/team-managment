@@ -12,6 +12,8 @@
 		"watch": "yarn build:dev --watch",
 		"nodemon": "nodemon --inspect build/main.js",
 		"lint": "eslint --ignore-path .gitignore --ignore-path .eslintignore",
+		"test": "jest --maxWorkers 4 --detectOpenHandles --no-watchman --forceExit --config jest.config.js",
+		"test:watch": "yarn test --watch",
 		"migrate:latest": "knex migrate:latest",
 		"migrate:make": "knex migrate:make",
 		"migrate:rollback": "knex migrate:rollback"
@@ -70,6 +72,7 @@
 		"morgan": "^1.10.0",
 		"pg": "^8.5.1",
 		"pg-escape": "^0.2.0",
+		"supertest": "^6.0.1",
 		"uuid": "^8.3.2"
 	}
 }

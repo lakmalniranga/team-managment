@@ -1,4 +1,4 @@
-import { add as addDuration, isBefore as isBeforeDate, parse as parseDate } from 'date-fns';
+import { add as addDuration, isBefore as isBeforeDate, parseISO } from 'date-fns';
 
 /**
  * Add duration to a date
@@ -35,5 +35,5 @@ export function isBefore(date, dateToCompare) {
  * @return {Date}
  */
 export function parse(date) {
-	return parseDate(date);
+	return parseISO(date);
 }

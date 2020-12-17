@@ -1,4 +1,4 @@
-# Ledger Rest API
+# Team managment API
 
 Please note this project has been developed for a coding exercise.
 
@@ -18,6 +18,7 @@ Please note this project has been developed for a coding exercise.
 -   `nodemon` Runs the dev server. it's used by `dev` script.
 -   `lint` Exports eslint command and requries a file/dir path to lint
 -   `test` Runs jest tests
+-   `test:watch` Runs jest tests with --watch
 
 ## Notes
 

@@ -21,7 +21,9 @@
 					"@services": "./src/services/index.js",
 					"@auth": "./src/modules/auth",
 					"@users": "./src/modules/users",
-					"@src": "./src"
+					"@teams": "./src/modules/teams",
+					"@src": "./src",
+					"@tests": "./tests"
 				}
 			}
 		]

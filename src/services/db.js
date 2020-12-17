@@ -22,7 +22,7 @@ class DB extends ServiceBase {
 			...knexConfig,
 			connection: { ...dbConfig },
 		});
-		if (DEBUG_KNEX || config.IS_DEVELOPMENT) {
+		if (DEBUG_KNEX && config.IS_DEVELOPMENT) {
 			knex.on('query', (data) => console.log('===>', data.sql, data.bindings));
 		}
 		return knex;

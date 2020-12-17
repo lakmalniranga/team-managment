@@ -10,4 +10,8 @@ export default class BaseModel {
 	toJSON() {
 		return { ...this };
 	}
+
+	toJSONAdmin() {
+		return { ...this };
+	}
 }

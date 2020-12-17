@@ -30,14 +30,26 @@ export const INVALID_PASSWORD = {
 	name: 'INVALID_PASSWORD',
 };
 
-// export const CURRENT_PASSWORD_INVALID = {
-// 	statusCode: HttpStatus.BAD_REQUEST,
-// 	message: 'Current password provided is wrong',
-// 	name: 'CURRENT_PASSWORD_INVALID',
-// };
+export const OBJECT_NOT_FOUND = {
+	statusCode: HttpStatus.NOT_FOUND,
+	message: 'Requested resource not found',
+	name: 'OBJECT_NOT_FOUND',
+};
 
-// export const OBJECT_NOT_FOUND = {
-// 	statusCode: HttpStatus.NOT_FOUND,
-// 	message: 'Requested resource not found',
-// 	name: 'OBJECT_NOT_FOUND',
-// };
+export const USER_ALREADY_EXISTS_IN_TEAM = {
+	statusCode: HttpStatus.NOT_FOUND,
+	message: 'User already exists in the team',
+	name: 'USER_ALREADY_EXISTS_IN_TEAM',
+};
+
+export const USER_DOES_NOT_EXISTS_IN_TEAM = {
+	statusCode: HttpStatus.NOT_FOUND,
+	message: 'User does not exists in the team',
+	name: 'USER_DOES_NOT_EXISTS_IN_TEAM',
+};
+
+export const NOT_ALLOWED_YOURSELF_TO_REMOVE = {
+	statusCode: HttpStatus.NOT_FOUND,
+	message: 'You are not allowed to remove yourself from the team',
+	name: 'NOT_ALLOWED_YOURSELF_TO_REMOVE',
+};

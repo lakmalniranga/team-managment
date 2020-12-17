@@ -78,7 +78,6 @@ export async function isAuthenticated(req, res, next) {
 		const token = extractAuthToken({ req });
 		const { userID, expiry } = await decodeToken(token);
 		if (isBefore(parse(expiry), new Date())) throw ACCESS_UNAUTHORIZED;
-
 		const repo = getUserRepo();
 		const user = await repo.findByID({ userID });
 		if (!user) throw ACCESS_UNAUTHORIZED;
